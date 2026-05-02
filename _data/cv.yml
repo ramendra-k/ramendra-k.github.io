@@ -1,189 +1,150 @@
 cv:
-  name: Albert Einstein
-  label: Scientist
-  email: einstein@example.com
-  location: Princeton, NJ
+  name: Ramendra Kumar
+  label: Systems & AI Infrastructure Engineer
+  location: Hyderabad, India
   image: ""
-  summary: A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time
+  summary: Engineer with 6+ years progressing from systems engineering and high-throughput media pipelines to large-scale infrastructure and AI systems. Currently at Microsoft building AI-powered device health monitoring and autonomous remediation for 10,000+ Windows endpoints. MS in CS from UT Austin (3.9/4.0).
 
   social_networks:
-    - network: X
-      username: AlbertEinstein
     - network: GitHub
-      username: example
+      username: ramendra-k
     - network: LinkedIn
-      username: example
-
-  address:
-    street: 2712 Broadway St
-    city: San Francisco
-    region: California
-    postalCode: CA 94115
-    countryCode: US
+      username: ramendrakumar
 
   sections:
-    Education:
-      - institution: University of Zurich
-        location: Zurich, Switzerland
-        url: https://www.uzh.ch/
-        area: Physics
-        studyType: PhD
-        start_date: 1900
-        end_date: 1905
-        score: ""
-        courses: "Theory of Relativity"
-        highlights:
-          - Description 1.
-          - Description 2.
-
-      - institution: Eidgenössische Technische Hochschule
-        location: Zurich, Switzerland
-        area: Physics
-        studyType: Federal teaching diploma
-        start_date: 1896
-        end_date: 1900
-        highlights:
-          - Description 1.
-          - Description 2.
-
     Experience:
-      - company: Institute for Advanced Study, Princeton University
-        position: Professor of Theoretical Physics
-        location: Princeton University, NJ
-        start_date: 1933
-        end_date: 1955
-        summary: Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.
+      - company: Microsoft
+        position: SDE-II
+        location: Hyderabad, India
+        start_date: 2024-07
+        end_date: ""
+        summary: Post Launch Engineering — Surface ARM devices
         highlights:
-          - Relativity
-          - Description 2.
+          - "Owned Windows Update delivery pipelines for ARM-based devices across 9 SKUs and 3 chipsets — monitored update health across 10,000+ device fleet, built telemetry-driven regression detection, and maintained build pipeline reliability of drivers and firmware across release cycles."
+          - "Drove end-to-end Surface device reliability — diagnosed customer-facing firmware/software issues through root-cause analysis across drivers and OS layers. Analyzed large-scale Windows telemetry to identify failure patterns and validate fixes before broad rollout."
+          - "Architected HealthSenseAI, a fleet-scale health monitoring platform for 10,000+ Windows endpoints with real-time telemetry ingestion and 24 health checkers — replacing manual per-device debugging with a centralized dashboard. Built an autonomous self-heal engine using agentic AI with causal root-cause analysis, domain-specific repair skills, and bounded remediation. Achieved 29% auto-fix rate across 19 issue types."
+          - "Resolved an NPU resource leak in the Windows Hello face-recognition pipeline — the Neural Processing Unit was not deallocated after sign-in, causing sustained high utilization for ~1 hour post-restart. Root-caused via telemetry analysis and driver-level debugging on AI-accelerator silicon."
+          - "Built PLE Echo, an AI onboarding assistant — fine-tuned Mistral-7B with LoRA/PEFT on team docs, built a FAISS-indexed RAG pipeline, and deployed as a web app to reduce repeated knowledge-transfer overhead from senior engineers."
+          - "Mentored 2 new-hire engineers on codebase, debugging workflows, and fleet health tooling."
 
-      - company: California Institute of Technology
-        position: Visiting Professor
-        location: Pasadena, California, US
-        start_date: 1933
-        end_date: 1933
+      - company: Samsung R&D
+        position: Senior Software Engineer
+        location: Bangalore, India
+        start_date: 2022-01
+        end_date: 2024-06
+        summary: ExpertRaw Camera App — Image Processing Pipeline
         highlights:
-          - Description 1.
-          - Description 2.
+          - "Owned the image processing pipeline for ExpertRaw, Samsung's flagship camera app (~3M active users), working at the Android framework layer across S22/S23 series devices."
+          - "Designed a cloud-based compute offloading service for image rendering, enabling flagship-grade image quality on mid-tier devices with limited on-device processing power."
+          - "Built the 50MP capture and processing framework, handling high-resolution frame buffers with optimized memory management and pipeline throughput to prevent OOM crashes on constrained devices."
+          - "Engineered a priority-based processing scheduler — replaced LIFO ordering with user-intent-aware scheduling, reducing time-to-preview for the most recent capture."
+          - "Developed Astrography and multi-exposure capture modes — shipped in flagship releases for night-sky photography and scene superimposition."
 
-      - company: Kaiser Wilhelm Institute for Physics
-        position: Director
-        location: Berlin, Germany
-        start_date: 1917
-        end_date: 1933
-
-      - company: Karl-Ferdinand University
-        position: Professor of Theoretical Physics
-        location: Prague, Czechoslovakia
-        start_date: 1911
-        end_date: 1917
-
-      - company: University of Zurich
-        position: Associate Professor of Theoretical Physics
-        location: Zurich, Switzerland
-        start_date: 1909
-        end_date: 1911
-
-    Volunteer:
-      - company: People's Climate March
-        position: Lead Organizer
-        location: Zurich, Switzerland
-        start_date: 2014-04-01
-        end_date: 2015-07-01
-        summary: Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.
+      - company: BigGrocers
+        position: Software Engineer
+        location: Bangalore, India
+        start_date: 2021-07
+        end_date: 2021-12
         highlights:
-          - "Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march."
-          - "Men of the year 2014 by Time magazine"
+          - "Built REST backend services for order aggregation, placement, tracking, and UPI payment gateway integration."
+
+      - company: Qualcomm
+        position: Associate Software Engineer
+        location: Hyderabad, India
+        start_date: 2019-09
+        end_date: 2021-01
+        highlights:
+          - "Optimized a display driver algorithm for low-cost chipsets — achieved 2× refresh rate improvement (30Hz → 60Hz at 4K HDR on HDMI) while reducing resource consumption, enabling flagship display capabilities on budget silicon."
+          - "Developed at the hardware-software co-optimization layer, directly interfacing with display hardware, HDMI protocols, and hardware abstraction layers."
+
+    Education:
+      - institution: The University of Texas at Austin
+        location: Austin, TX
+        area: Computer Science
+        studyType: M.S.
+        start_date: 2024-08
+        end_date: 2026-05
+        score: "3.9/4.0"
+        courses: "Deep Learning, Machine Learning, Reinforcement Learning, NLP, Advanced Deep Learning, Advanced Operating Systems, Planning Search & Reasoning Under Uncertainty, Optimization, Online Learning"
+
+      - institution: Jadavpur University
+        location: Kolkata, India
+        area: Electronics & Instrumentation Engineering
+        studyType: B.E.
+        start_date: 2015-08
+        end_date: 2019-05
+        score: "7.6/10.0"
 
     Awards:
-      - title: Nobel Prize in Physics
-        authors:
-          - "Royal Swedish Academy of Sciences"
-        date: 1921-11-01
-        awarder: Royal Swedish Academy of Sciences
-        url: https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/
-        summary: The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'
+      - title: Engineering Excellence Award
+        date: 2025
+        awarder: Microsoft
+        summary: "For delivering HealthSenseAI from proof-of-concept to production."
 
-      - title: Max Planck Medal
-        authors:
-          - "German Physical Society"
-        date: 2029
-        awarder: German Physical Society
-        summary: Awarded for outstanding scientific achievement
+      - title: Quarterly Impact Award
+        date: 2023
+        awarder: Samsung R&D
+        summary: "For outstanding contributions to the Astrography capture feature in ExpertRaw camera framework."
 
     Publications:
-      - title: Zur Elektrodynamik bewegter Körper
+      - title: "A Computer Vision-Based Fire Detection and Control System"
         authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1905-06-30
-        url: https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies
-        summary: It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source.
+          - Ramendra Kumar
+        publisher: "Springer — Fire Technology"
+        releaseDate: 2023
+        url: https://link.springer.com/article/10.1007/s10694-023-01392-w
+        summary: "Real-time fire detection on Raspberry Pi using image processing. Achieved 95.26% accuracy — 7.95% improvement over prior algorithms."
 
-      - title: Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt
+      - title: "Debiasing Natural Language Inference Models Using a Product of Experts Approach"
         authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1905-03-18
-        url: https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt
-        summary: In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921.
+          - Ramendra Kumar
+        publisher: "UT Austin — Selected Research"
+        releaseDate: 2025
+        summary: "PoE debiasing framework with ELECTRA-small; improved robustness on SNLI and HANS benchmarks by reducing shortcut dependence."
 
-      - title: Die Grundlage der allgemeinen Relativitätstheorie
+      - title: "Detecting Integrity Events in Airbnb's Sparse Data Streams"
         authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1916-03-20
-        url: https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie
-        summary: The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914).
+          - Ramendra Kumar
+        publisher: "UT Austin — Selected Research"
+        releaseDate: 2025
+        summary: "Semantic Neural Hawkes Process (S-NHP) for integrity detection over sparse textual signals; substantially reduced false positives vs. memoryless baselines."
 
     Skills:
-      - name: Physics
-        level: Master
-        icon: fa-solid fa-hashtag
-        keywords: "Quantum Mechanics, Quantum Computing, Quantum Information, Quantum Cryptography, Quantum Communication, Quantum Teleportation"
+      - name: ML & AI
+        level: ""
+        icon: fa-solid fa-robot
+        keywords: "PyTorch, Transformers, Ray, Spark, Kubeflow, vLLM, ONNX, LLM Fine-tuning, Agentic AI Systems, Agent Harness, MLOps, Collaborative Filtering, Recommendation Systems"
 
-    Languages:
-      - name: German
-        summary: "Native speaker"
+      - name: Systems & Infra
+        level: ""
+        icon: fa-solid fa-server
+        keywords: "Linux, Kubernetes, Docker, Distributed Systems, GPU/NPU Debugging, Kafka, Redis, CI/CD"
 
-      - name: English
-        summary: "Fluent"
-
-    Interests:
-      - name: Physics
-        icon: fa-solid fa-tag
-        keywords: "Quantum Mechanics, Quantum Computing, Quantum Information, Quantum Cryptography, Quantum Communication, Quantum Teleportation"
-
-    Certificates:
-      - name: Machine Learning
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-location-dot
-
-      - name: Quantum Computing
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-tag
-
-      - name: Quantum Information
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-envelope
+      - name: Languages
+        level: ""
+        icon: fa-solid fa-code
+        keywords: "Python, C/C++, Java"
 
     Projects:
-      - name: Quantum Computing
-        summary: Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.
+      - name: HealthSenseAI Self-Heal Engine
+        summary: "Autonomous agentic system: 24 health checkers → causal root-cause analysis → skill-scoped AI agent → bounded repair → deterministic verification. Full audit trail. Circuit breaker for AI backend resilience. PII redaction layer."
         highlights:
-          - Quantum Teleportation
-          - Quantum Cryptography
-        start_date: 2018-01-01
-        end_date: 2018-01-01
+          - "Python, Azure OpenAI, asyncio"
+          - "29% auto-fix rate across 19 issue types"
+        start_date: 2024
+        end_date: ""
 
-    References:
-      - name: Professor John Doe
-        icon: fa-solid fa-laptop
-        reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
+      - name: PLE Echo — AI Onboarding Agent
+        summary: "Fine-tuned 7B-parameter LLM on internal team documentation using LoRA/PEFT. Built FAISS-indexed RAG pipeline with BGE-large embeddings. Deployed as web application for team-wide use."
+        highlights:
+          - "Python, PyTorch, Mistral-7B, Flask"
+        start_date: 2024
+        end_date: ""
 
-      - name: Professor Jane Smith
-        icon: fa-solid fa-thumbtack
-        reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
+      - name: Fire Detection & Control System
+        summary: "Raspberry Pi-based real-time fire detection using image processing with histogram, centroid, and variance analysis. Published in Springer."
+        highlights:
+          - "Python, OpenCV, Raspberry Pi"
+          - "95.26% accuracy"
+        start_date: 2018
+        end_date: 2019
