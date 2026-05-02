@@ -3,7 +3,7 @@ layout: about
 title: about
 permalink: /
 subtitle: Systems & AI Infrastructure Engineer · SDE-II at Microsoft
-nav: true
+nav: false
 nav_order: 0
 
 profile:
