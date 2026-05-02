@@ -8,7 +8,7 @@ nav_order: 0
 
 profile:
   align: right
-  image: ""
+  image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>Hyderabad, India</p>
