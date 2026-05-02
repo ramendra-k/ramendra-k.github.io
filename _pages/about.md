@@ -29,8 +29,14 @@ latest_posts:
   limit: 0 # leave blank to include all the blog posts
 ---
 
-Ramendra Kumar is a Systems & AI Infrastructure Engineer and SDE-II at Microsoft, where he works on fleet-scale reliability for Surface ARM devices. His work spans Windows update health, telemetry-driven regression detection, firmware and driver debugging, and autonomous remediation systems for large endpoint fleets.
+Hello and welcome to my personal website!
 
-He previously built high-throughput media and camera pipeline systems at Samsung, backend commerce services at BigGrocers, and display-driver optimizations at Qualcomm. Across these roles, he has worked from low-level systems and hardware-software integration up to distributed infrastructure and AI-powered tooling.
+I am a Systems & AI Infrastructure Engineer currently working as an SDE-II at Microsoft, where I build fleet-scale reliability systems for Surface ARM devices. My work spans Windows update delivery, large-scale telemetry analysis, and AI-powered autonomous remediation — including an agentic self-heal engine that auto-resolves 29% of detected device issues without human intervention.
 
-Ramendra is currently pursuing an M.S. in Computer Science at The University of Texas at Austin, where his interests include large-scale systems, ML infrastructure, agentic AI, and robust production engineering. See his [CV](/cv/) for experience and publications, or browse selected [projects](/projects/).
+My journey into systems and AI started at Qualcomm, where I worked on display drivers and hardware-software co-optimization. From there, I moved to Samsung R&D, building high-throughput image processing pipelines for ExpertRaw — a flagship camera app used by ~3M users. Each role deepened my passion for building robust infrastructure at the intersection of systems engineering and machine learning.
+
+I am currently pursuing an M.S. in Computer Science at The University of Texas at Austin (GPA: 3.9/4.0), with coursework spanning deep learning, reinforcement learning, NLP, and advanced operating systems. I've fine-tuned LLMs, built RAG systems, and published research in both computer vision and NLP.
+
+Here, you'll find my [CV](/cv/) with detailed experience, [projects](/projects/) I've built, and my research work. Thanks for visiting!
+
+*This site is under construction. More content coming soon!*
