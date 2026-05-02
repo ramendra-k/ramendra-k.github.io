@@ -17,7 +17,7 @@ cv:
         position: SDE-II
         location: Hyderabad, India
         start_date: 2024-07
-        end_date: ""
+        end_date: "Present"
         summary: Post Launch Engineering — Surface ARM devices
         highlights:
           - "Owned Windows Update delivery pipelines for ARM-based devices across 9 SKUs and 3 chipsets — monitored update health across 10,000+ device fleet, built telemetry-driven regression detection, and maintained build pipeline reliability of drivers and firmware across release cycles."
