@@ -8,8 +8,8 @@ nav_order: 0
 
 profile:
   align: right
-  image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
+  image: 
+  image_circular: false
   more_info: >
     <p>Hyderabad, India</p>
     <p>SDE-II at Microsoft</p>
