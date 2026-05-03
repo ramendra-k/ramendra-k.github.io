@@ -165,16 +165,13 @@ cv:
       - name: Data & Analytics
         keywords:
           - Telemetry Analysis
-          - Data Visualization
           - Statistical Analysis
           - A/B Testing
 
       - name: Tools & Platforms
         keywords:
-          - Azure
           - Azure DevOps
           - WinDbg
-          - LaTeX
 
     Languages:
       - language: English
