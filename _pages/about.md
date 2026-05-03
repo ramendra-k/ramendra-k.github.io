@@ -27,9 +27,9 @@ latest_posts:
 
 Hey, glad you're here.
 
-I'm a software engineer who likes building things that sit at the intersection of systems and AI — the kind of work where reliability matters as much as intelligence. Right now, I'm at Microsoft, shipping Windows Updates to Surface devices and building AI-powered tools that help diagnose and fix device issues autonomously.
+I'm a software engineer who likes building things that sit at the intersection of systems and AI, the kind of work where reliability matters as much as intelligence. Right now, I'm at Microsoft, shipping Windows Updates to Surface devices and building AI-powered tools that help diagnose and fix device issues autonomously.
 
-Before this, I worked on camera pipelines at Samsung R&D and display drivers at Qualcomm — experiences that taught me to care deeply about performance, correctness, and building things that work under real constraints.
+Before this, I worked on the Android Camera Framework and image buffer processing at Samsung R&D, and display drivers at Qualcomm, experiences that taught me to care deeply about performance, correctness, and building things that work under real constraints.
 
 I hold an M.S. in Computer Science from The University of Texas at Austin, where I spent time studying deep learning, reinforcement learning, NLP, and operating systems.
 

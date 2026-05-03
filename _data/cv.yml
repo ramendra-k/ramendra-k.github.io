@@ -22,7 +22,7 @@ cv:
         highlights:
           - "Ship Windows Updates across ARM-based Surface devices, owning update health and build pipeline reliability for multiple SKUs and chipsets."
           - "Analyze fleet-scale telemetry to identify failure patterns, diagnose firmware and driver issues, and validate fixes before broad rollout."
-          - "Contributed to the design and development of HealthSenseAI — an agentic AI platform that autonomously detects, diagnoses, and remediates device health issues."
+          - "Contributed to the design and development of HealthSenseAI, an agentic AI platform that autonomously detects, diagnoses, and remediates device health issues."
           - "Root-caused NPU and AI-accelerator silicon failures through hardware-level debugging and telemetry analysis."
           - "Designed and developed an internal AI onboarding assistant using LLM fine-tuning and RAG."
 
@@ -84,7 +84,7 @@ cv:
       - title: "A Computer Vision-Based Fire Detection and Control System"
         authors:
           - Ramendra Kumar
-        publisher: "Springer — Fire Technology"
+        publisher: "Springer, Fire Technology"
         releaseDate: 2023
         url: https://link.springer.com/article/10.1007/s10694-023-01392-w
         summary: "Developed a Raspberry Pi-based real-time fire detection system using image processing techniques including histogram analysis, centroid tracking, and variance-based filtering. The system activates a relay-controlled pump and sprinkler setup for automated fire suppression. Achieved 95.26% detection accuracy with a 7.95% improvement in accuracy and 9.43% improvement in precision over existing algorithms."
@@ -92,16 +92,16 @@ cv:
       - title: "Debiasing Natural Language Inference Models Using a Product of Experts Approach"
         authors:
           - Ramendra Kumar
-        publisher: "UT Austin — Research"
+        publisher: "UT Austin, Research"
         releaseDate: 2025
         summary: "Explored the Product of Experts (PoE) debiasing framework to reduce shortcut dependence in NLI models. Used ELECTRA-small as both baseline and main model, with a hypothesis-only classifier as the bias model. Evaluated on SNLI and HANS benchmarks, demonstrating that PoE improves robustness by forcing the model to learn beyond superficial heuristic patterns. Included training dynamics analysis, dataset cartography, and confusion-matrix evaluation."
 
       - title: "Detecting Integrity Events in Airbnb's Sparse Data Streams"
         authors:
           - Ramendra Kumar
-        publisher: "UT Austin — Research"
+        publisher: "UT Austin, Research"
         releaseDate: 2025
-        summary: "Proposed a Semantic Neural Hawkes Process (S-NHP) framework that models integrity detection as a self-exciting process over sparse textual signals. Combines temporally contrastive sentence embeddings, interpretable multi-head semantic excitation kernels, and Extreme Value Theory (EVT) based tail modeling. Captures Semantic Temporal Resonance — causally related safety narratives that amplify risk intensity over time. Demonstrated substantial reduction in false positives compared to memoryless baselines while detecting integrity events earlier."
+        summary: "Proposed a Semantic Neural Hawkes Process (S-NHP) framework that models integrity detection as a self-exciting process over sparse textual signals. Combines temporally contrastive sentence embeddings, interpretable multi-head semantic excitation kernels, and Extreme Value Theory (EVT) based tail modeling. Captures Semantic Temporal Resonance, causally related safety narratives that amplify risk intensity over time. Demonstrated substantial reduction in false positives compared to memoryless baselines while detecting integrity events earlier."
 
     Skills:
       - name: Computer Science
@@ -173,7 +173,7 @@ cv:
         start_date: 2024
         end_date: ""
 
-      - name: PLE Echo — AI Onboarding Agent
+      - name: PLE Echo, AI Onboarding Agent
         summary: "An internal AI assistant built for engineer onboarding. Fine-tuned a large language model on team documentation and built a retrieval-augmented generation (RAG) pipeline for contextual answers. Deployed as a web application."
         highlights:
           - "Python, PyTorch, Flask"
