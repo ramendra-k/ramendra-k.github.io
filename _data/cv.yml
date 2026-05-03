@@ -34,7 +34,7 @@ cv:
         highlights:
           - "Worked on the image processing pipeline for ExpertRaw, Samsung's flagship camera application, at the Android framework layer."
           - "Designed a cloud-based compute offloading service for image rendering, enabling high-quality imaging on devices with limited processing power."
-          - "Built capture and processing frameworks for high-resolution photography with optimized memory management."
+          - "Designed and developed capture and processing frameworks for high-resolution photography with optimized memory management."
           - "Engineered scheduling and processing optimizations for the camera pipeline."
           - "Developed Astrography and multi-exposure capture modes shipped in flagship device releases."
 
