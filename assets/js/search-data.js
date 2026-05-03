@@ -92,6 +92,13 @@ ninja.data = [{
           window.open("https://www.linkedin.com/in/ramendra-k", "_blank");
         },
       },{
+        id: 'social-email',
+        title: 'email',
+        section: 'Socials',
+        handler: () => {
+          window.open("mailto:%6B%75%6D%61%72%72%61%6D%65%6E%64%72%61%31%35%34@%67%6D%61%69%6C.%63%6F%6D", "_blank");
+        },
+      },{
       id: 'light-theme',
       title: 'Change theme to light',
       description: 'Change the theme of the site to Light',
