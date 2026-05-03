@@ -31,12 +31,10 @@ latest_posts:
 
 Hello and welcome to my personal website!
 
-I am a Systems & AI Infrastructure Engineer currently working as an SDE-II at Microsoft, where I build fleet-scale reliability systems for Surface ARM devices. My work spans Windows update delivery, large-scale telemetry analysis, and AI-powered autonomous remediation — including an agentic self-heal engine that auto-resolves 29% of detected device issues without human intervention.
+I am a Systems & AI Infrastructure Engineer currently working as an SDE-II at Microsoft, where I focus on fleet-scale reliability and AI-powered automation for Windows devices. My work sits at the intersection of systems engineering and machine learning — building infrastructure that monitors, diagnoses, and autonomously remediates issues across large device fleets.
 
-My journey into systems and AI started at Qualcomm, where I worked on display drivers and hardware-software co-optimization. From there, I moved to Samsung R&D, building high-throughput image processing pipelines for ExpertRaw — a flagship camera app used by ~3M users. Each role deepened my passion for building robust infrastructure at the intersection of systems engineering and machine learning.
+My journey started at Qualcomm, working on display drivers and hardware-software co-optimization at the chip level. I then moved to Samsung R&D, where I built high-throughput image processing pipelines for a flagship camera application used by millions. These experiences gave me a deep appreciation for building robust, performant systems under real-world constraints.
 
-I am currently pursuing an M.S. in Computer Science at The University of Texas at Austin (GPA: 3.9/4.0), with coursework spanning deep learning, reinforcement learning, NLP, and advanced operating systems. I've fine-tuned LLMs, built RAG systems, and published research in both computer vision and NLP.
+I am currently pursuing an M.S. in Computer Science at The University of Texas at Austin, with coursework spanning deep learning, reinforcement learning, NLP, and advanced operating systems. My research interests include agentic AI systems, ML infrastructure, and the reliability engineering that makes AI work in production.
 
-Here, you'll find my [CV](/cv/) with detailed experience, [projects](/projects/) I've built, and my research work. Thanks for visiting!
-
-*This site is under construction. More content coming soon!*
+Here, you'll find my [CV](/cv/), [projects](/projects/), [blog](/blog/), and research work. Thanks for visiting!

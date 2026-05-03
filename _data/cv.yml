@@ -3,7 +3,7 @@ cv:
   label: Systems & AI Infrastructure Engineer
   location: Hyderabad, India
   image: ""
-  summary: Engineer with 6+ years progressing from systems engineering and high-throughput media pipelines to large-scale infrastructure and AI systems. Currently at Microsoft building AI-powered device health monitoring and autonomous remediation for 10,000+ Windows endpoints. MS in CS from UT Austin (3.9/4.0).
+  summary: Engineer with 6+ years of experience spanning systems engineering, high-throughput media pipelines, and large-scale infrastructure. Passionate about building AI-powered systems that operate reliably in production. Currently pursuing an M.S. in Computer Science at UT Austin.
 
   social_networks:
     - network: GitHub
@@ -18,27 +18,27 @@ cv:
         location: Hyderabad, India
         start_date: 2024-07
         end_date: "Present"
-        summary: Post Launch Engineering — Surface ARM devices
+        summary: Post Launch Engineering — Surface ARM Devices
         highlights:
-          - "Owned Windows Update delivery pipelines for ARM-based devices across 9 SKUs and 3 chipsets — monitored update health across 10,000+ device fleet, built telemetry-driven regression detection, and maintained build pipeline reliability of drivers and firmware across release cycles."
-          - "Drove end-to-end Surface device reliability — diagnosed customer-facing firmware/software issues through root-cause analysis across drivers and OS layers. Analyzed large-scale Windows telemetry to identify failure patterns and validate fixes before broad rollout."
-          - "Architected HealthSenseAI, a fleet-scale health monitoring platform for 10,000+ Windows endpoints with real-time telemetry ingestion and 24 health checkers — replacing manual per-device debugging with a centralized dashboard. Built an autonomous self-heal engine using agentic AI with causal root-cause analysis, domain-specific repair skills, and bounded remediation. Achieved 29% auto-fix rate across 19 issue types."
-          - "Resolved an NPU resource leak in the Windows Hello face-recognition pipeline — the Neural Processing Unit was not deallocated after sign-in, causing sustained high utilization for ~1 hour post-restart. Root-caused via telemetry analysis and driver-level debugging on AI-accelerator silicon."
-          - "Built PLE Echo, an AI onboarding assistant — fine-tuned Mistral-7B with LoRA/PEFT on team docs, built a FAISS-indexed RAG pipeline, and deployed as a web app to reduce repeated knowledge-transfer overhead from senior engineers."
-          - "Mentored 2 new-hire engineers on codebase, debugging workflows, and fleet health tooling."
+          - "Work on Windows Update delivery pipelines for ARM-based Surface devices, ensuring update health and build pipeline reliability across multiple SKUs and chipsets."
+          - "Drive device reliability by analyzing large-scale telemetry data to identify failure patterns, diagnose firmware and software issues, and validate fixes before broad rollout."
+          - "Built HealthSenseAI, an AI-powered device health monitoring platform with autonomous remediation capabilities — uses agentic AI to detect, diagnose, and resolve device issues automatically."
+          - "Debugged NPU (Neural Processing Unit) issues on AI-accelerator silicon, root-causing hardware and driver-level failures through telemetry analysis."
+          - "Built an internal AI assistant for engineer onboarding using LLM fine-tuning and retrieval-augmented generation (RAG)."
+          - "Mentor new-hire engineers on team workflows and tooling."
 
       - company: Samsung R&D
         position: Senior Software Engineer
         location: Bangalore, India
         start_date: 2022-01
         end_date: 2024-06
-        summary: ExpertRaw Camera App — Image Processing Pipeline
+        summary: ExpertRaw Camera App — Image Processing Framework
         highlights:
-          - "Owned the image processing pipeline for ExpertRaw, Samsung's flagship camera app (~3M active users), working at the Android framework layer across S22/S23 series devices."
-          - "Designed a cloud-based compute offloading service for image rendering, enabling flagship-grade image quality on mid-tier devices with limited on-device processing power."
-          - "Built the 50MP capture and processing framework, handling high-resolution frame buffers with optimized memory management and pipeline throughput to prevent OOM crashes on constrained devices."
-          - "Engineered a priority-based processing scheduler — replaced LIFO ordering with user-intent-aware scheduling, reducing time-to-preview for the most recent capture."
-          - "Developed Astrography and multi-exposure capture modes — shipped in flagship releases for night-sky photography and scene superimposition."
+          - "Worked on the image processing pipeline for ExpertRaw, Samsung's flagship camera application, at the Android framework layer."
+          - "Designed a cloud-based compute offloading service for image rendering, enabling high-quality imaging on devices with limited processing power."
+          - "Built capture and processing frameworks for high-resolution photography with optimized memory management."
+          - "Engineered scheduling and processing optimizations for the camera pipeline."
+          - "Developed Astrography and multi-exposure capture modes shipped in flagship device releases."
 
       - company: BigGrocers
         position: Software Engineer
@@ -46,7 +46,7 @@ cv:
         start_date: 2021-07
         end_date: 2021-12
         highlights:
-          - "Built REST backend services for order aggregation, placement, tracking, and UPI payment gateway integration."
+          - "Built backend services for order management, tracking, and payment gateway integration."
 
       - company: Qualcomm
         position: Associate Software Engineer
@@ -54,8 +54,8 @@ cv:
         start_date: 2019-09
         end_date: 2021-01
         highlights:
-          - "Optimized a display driver algorithm for low-cost chipsets — achieved 2× refresh rate improvement (30Hz → 60Hz at 4K HDR on HDMI) while reducing resource consumption, enabling flagship display capabilities on budget silicon."
-          - "Developed at the hardware-software co-optimization layer, directly interfacing with display hardware, HDMI protocols, and hardware abstraction layers."
+          - "Optimized display driver algorithms for low-cost chipsets, improving refresh rate and enabling higher-quality display output on budget hardware."
+          - "Worked at the hardware-software co-optimization layer, interfacing with display hardware and HDMI protocols."
 
     Education:
       - institution: The University of Texas at Austin
@@ -93,21 +93,21 @@ cv:
         publisher: "Springer — Fire Technology"
         releaseDate: 2023
         url: https://link.springer.com/article/10.1007/s10694-023-01392-w
-        summary: "Real-time fire detection on Raspberry Pi using image processing. Achieved 95.26% accuracy — 7.95% improvement over prior algorithms."
+        summary: "Developed a Raspberry Pi-based real-time fire detection system using image processing techniques including histogram analysis, centroid tracking, and variance-based filtering. The system activates a relay-controlled pump and sprinkler setup for automated fire suppression. Achieved 95.26% detection accuracy with a 7.95% improvement in accuracy and 9.43% improvement in precision over existing algorithms."
 
       - title: "Debiasing Natural Language Inference Models Using a Product of Experts Approach"
         authors:
           - Ramendra Kumar
-        publisher: "UT Austin — Selected Research"
+        publisher: "UT Austin — Research"
         releaseDate: 2025
-        summary: "PoE debiasing framework with ELECTRA-small; improved robustness on SNLI and HANS benchmarks by reducing shortcut dependence."
+        summary: "Explored the Product of Experts (PoE) debiasing framework to reduce shortcut dependence in NLI models. Used ELECTRA-small as both baseline and main model, with a hypothesis-only classifier as the bias model. Evaluated on SNLI and HANS benchmarks, demonstrating that PoE improves robustness by forcing the model to learn beyond superficial heuristic patterns. Included training dynamics analysis, dataset cartography, and confusion-matrix evaluation."
 
       - title: "Detecting Integrity Events in Airbnb's Sparse Data Streams"
         authors:
           - Ramendra Kumar
-        publisher: "UT Austin — Selected Research"
+        publisher: "UT Austin — Research"
         releaseDate: 2025
-        summary: "Semantic Neural Hawkes Process (S-NHP) for integrity detection over sparse textual signals; substantially reduced false positives vs. memoryless baselines."
+        summary: "Proposed a Semantic Neural Hawkes Process (S-NHP) framework that models integrity detection as a self-exciting process over sparse textual signals. Combines temporally contrastive sentence embeddings, interpretable multi-head semantic excitation kernels, and Extreme Value Theory (EVT) based tail modeling. Captures Semantic Temporal Resonance — causally related safety narratives that amplify risk intensity over time. Demonstrated substantial reduction in false positives compared to memoryless baselines while detecting integrity events earlier."
 
     Skills:
       - name: ML & AI
@@ -127,24 +127,22 @@ cv:
 
     Projects:
       - name: HealthSenseAI Self-Heal Engine
-        summary: "Autonomous agentic system: 24 health checkers → causal root-cause analysis → skill-scoped AI agent → bounded repair → deterministic verification. Full audit trail. Circuit breaker for AI backend resilience. PII redaction layer."
+        summary: "An AI-powered autonomous remediation system for device health. Uses agentic AI with causal root-cause analysis, domain-specific repair skills, bounded remediation, and safety guardrails. Monitors devices through real-time telemetry ingestion and health checkers across multiple subsystems."
         highlights:
           - "Python, Azure OpenAI, asyncio"
-          - "29% auto-fix rate across 19 issue types"
         start_date: 2024
         end_date: ""
 
       - name: PLE Echo — AI Onboarding Agent
-        summary: "Fine-tuned 7B-parameter LLM on internal team documentation using LoRA/PEFT. Built FAISS-indexed RAG pipeline with BGE-large embeddings. Deployed as web application for team-wide use."
+        summary: "An internal AI assistant built for engineer onboarding. Fine-tuned a large language model on team documentation and built a retrieval-augmented generation (RAG) pipeline for contextual answers. Deployed as a web application."
         highlights:
-          - "Python, PyTorch, Mistral-7B, Flask"
+          - "Python, PyTorch, Flask"
         start_date: 2024
         end_date: ""
 
       - name: Fire Detection & Control System
-        summary: "Raspberry Pi-based real-time fire detection using image processing with histogram, centroid, and variance analysis. Published in Springer."
+        summary: "A Raspberry Pi-based real-time fire detection system using computer vision. Detects growing fire in video frames and activates automated suppression. Published in Springer."
         highlights:
           - "Python, OpenCV, Raspberry Pi"
-          - "95.26% accuracy"
         start_date: 2018
         end_date: 2019
