@@ -74,26 +74,57 @@ layout: default
           <hr style="margin-top: 0.5rem; margin-bottom: 1.5rem;">
         {% endif %}
 
-        <!-- Section Menu -->
-        <div class="mb-4">
-          {% assign empty_array = '' | split: ',' %}
-          {% assign exp_check = cv.sections.Experience | default: empty_array %}
-          {% assign vol_check = cv.sections.Volunteer | default: empty_array %}
-          {% assign combined_check = exp_check | concat: vol_check %}
-          <ul class="list-unstyled" style="font-size: 1.1rem; line-height: 2.2;">
-            {% if cv.name or cv.label or cv.location or cv.email or cv.phone or cv.website %}
-              <li><a href="#contact-information" style="color: inherit; text-decoration: none; font-weight: 500;">Basics</a></li>
-            {% endif %}
-            {% if combined_check.size > 0 %}
-              <li><a href="#experience" style="color: inherit; text-decoration: none; font-weight: 500;">Work</a></li>
-            {% endif %}
-            {% for section_pair in cv.sections %}
-              {% assign section_title = section_pair[0] %}
-              {% if section_title == 'Experience' or section_title == 'Volunteer' %}{% continue %}{% endif %}
-              <li><a href="#{{ section_title | slugify }}" style="color: inherit; text-decoration: none; font-weight: 500;">{{ section_title }}</a></li>
-            {% endfor %}
-          </ul>
-        </div>
+        <!-- CV Sidebar Nav Style -->
+        <style>
+          .cv-layout { display: flex; gap: 2rem; }
+          .cv-sidebar { min-width: 160px; max-width: 180px; position: sticky; top: 80px; align-self: flex-start; }
+          .cv-sidebar ul { list-style: none; padding: 0; margin: 0; }
+          .cv-sidebar li { margin-bottom: 0.25rem; }
+          .cv-sidebar a {
+            display: block;
+            padding: 0.45rem 0.75rem;
+            color: inherit;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1.05rem;
+            border-radius: 6px;
+            transition: background 0.15s, color 0.15s;
+          }
+          .cv-sidebar a:hover { background: rgba(var(--bs-primary-rgb, 13,110,253), 0.08); color: var(--global-theme-color, #2698BA); }
+          .cv-sidebar a.active { background: var(--global-theme-color, #2698BA); color: #fff; }
+          .cv-content { flex: 1; min-width: 0; }
+          @media (max-width: 768px) {
+            .cv-layout { flex-direction: column; }
+            .cv-sidebar { position: static; max-width: 100%; display: flex; flex-wrap: wrap; gap: 0.25rem; min-width: auto; }
+            .cv-sidebar ul { display: flex; flex-wrap: wrap; gap: 0.25rem; }
+            .cv-sidebar li { margin-bottom: 0; }
+          }
+        </style>
+
+        <div class="cv-layout">
+          <!-- Left Sidebar Nav -->
+          <nav class="cv-sidebar">
+            {% assign empty_array = '' | split: ',' %}
+            {% assign exp_check = cv.sections.Experience | default: empty_array %}
+            {% assign vol_check = cv.sections.Volunteer | default: empty_array %}
+            {% assign combined_check = exp_check | concat: vol_check %}
+            <ul>
+              {% if cv.name or cv.label or cv.location or cv.email or cv.phone or cv.website %}
+                <li><a href="#contact-information" class="cv-nav-link">Basics</a></li>
+              {% endif %}
+              {% if combined_check.size > 0 %}
+                <li><a href="#experience" class="cv-nav-link">Work</a></li>
+              {% endif %}
+              {% for section_pair in cv.sections %}
+                {% assign section_title = section_pair[0] %}
+                {% if section_title == 'Experience' or section_title == 'Volunteer' or section_title == 'Projects' %}{% continue %}{% endif %}
+                <li><a href="#{{ section_title | slugify }}" class="cv-nav-link">{{ section_title }}</a></li>
+              {% endfor %}
+            </ul>
+          </nav>
+
+          <!-- Right Content -->
+          <div class="cv-content">
 
         <!-- Header/Contact Information -->
         <a class="anchor" id="contact-information"></a>
@@ -179,7 +210,7 @@ layout: default
           {% assign section_entries = section_pair[1] %}
 
           {% comment %} Skip Experience and Volunteer as we've already processed them combined {% endcomment %}
-          {% if section_title == 'Experience' or section_title == 'Volunteer' %}
+          {% if section_title == 'Experience' or section_title == 'Volunteer' or section_title == 'Projects' %}
             {% continue %}
           {% endif %}
 
@@ -231,6 +262,32 @@ layout: default
             </div>
           </div>
         {% endfor %}
+
+          </div><!-- end cv-content -->
+        </div><!-- end cv-layout -->
+
+        <!-- Scroll-spy: highlight active nav link -->
+        <script>
+          (function() {
+            var links = document.querySelectorAll('.cv-nav-link');
+            var sections = [];
+            links.forEach(function(link) {
+              var id = link.getAttribute('href').substring(1);
+              var el = document.getElementById(id);
+              if (el) sections.push({ id: id, el: el, link: link });
+            });
+            if (links.length > 0) links[0].classList.add('active');
+            window.addEventListener('scroll', function() {
+              var scrollPos = window.scrollY + 120;
+              var active = sections[0];
+              for (var i = 0; i < sections.length; i++) {
+                if (sections[i].el.offsetTop <= scrollPos) active = sections[i];
+              }
+              links.forEach(function(l) { l.classList.remove('active'); });
+              if (active) active.link.classList.add('active');
+            });
+          })();
+        </script>
 
       {% elsif render_jsonresume and site.data.resume %}
         {% comment %} JSONResume format {% endcomment %}
