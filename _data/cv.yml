@@ -111,10 +111,9 @@ cv:
           - Python
           - C/C++
           - Java
-          - Data Structures & Algorithms
+          - Algorithms
           - Operating Systems
           - Distributed Systems
-          - Git
           - SQL
 
       - name: AI & Machine Learning
@@ -160,7 +159,6 @@ cv:
           - Kafka
           - CI/CD
           - Windows Internals
-          - UEFI/Firmware
 
       - name: Data & Analytics
         keywords:
