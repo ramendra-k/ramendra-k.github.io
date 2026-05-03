@@ -63,43 +63,77 @@ layout: default
         <!-- Name Header -->
         {% if cv.name %}
           {% assign name_parts = cv.name | split: ' ' %}
-          <div class="text-center mb-4">
-            <h1 style="font-size: 2.5rem; margin-bottom: 0.25rem;">
-              <strong>{{ name_parts[0] }}</strong>{% for part in name_parts offset:1 %} {{ part }}{% endfor %}
+          <div class="text-center" style="margin-bottom: 2rem;">
+            <h1 style="font-size: 2.8rem; margin-bottom: 0.3rem; letter-spacing: 0.04em; font-weight: 300;">
+              <span style="font-weight: 700;">{{ name_parts[0] }}</span>{% for part in name_parts offset:1 %} {{ part }}{% endfor %}
             </h1>
             {% if cv.label %}
-              <p class="text-muted" style="font-size: 1.1rem; margin-bottom: 0;">{{ cv.label }}</p>
+              <p style="font-size: 0.95rem; margin-bottom: 0; color: #888; letter-spacing: 0.08em; text-transform: uppercase;">{{ cv.label }}</p>
             {% endif %}
           </div>
-          <hr style="margin-top: 0.5rem; margin-bottom: 1.5rem;">
+          <hr style="margin: 0 auto 2rem; border: none; border-top: 1px solid #e0e0e0; width: 60%;">
         {% endif %}
 
-        <!-- CV Sidebar Nav Style -->
+        <!-- CV Premium Style -->
         <style>
-          .cv-layout { display: flex; gap: 2rem; }
-          .cv-sidebar { min-width: 160px; max-width: 180px; position: sticky; top: 80px; align-self: flex-start; }
+          .cv-layout { display: flex; gap: 3rem; }
+          .cv-sidebar {
+            min-width: 140px; max-width: 150px;
+            position: sticky; top: 80px; align-self: flex-start;
+            padding-top: 0.5rem;
+          }
           .cv-sidebar ul { list-style: none; padding: 0; margin: 0; }
-          .cv-sidebar li { margin-bottom: 0.25rem; }
+          .cv-sidebar li { margin-bottom: 0.15rem; }
           .cv-sidebar a {
             display: block;
-            padding: 0.4rem 0.7rem;
-            color: inherit;
+            padding: 0.35rem 0.75rem;
+            color: #999;
             text-decoration: none;
-            font-weight: 500;
-            font-size: 0.9rem;
-            border-radius: 0;
-            border-left: 3px solid transparent;
-            transition: border-color 0.15s, color 0.15s;
+            font-weight: 400;
+            font-size: 0.85rem;
+            letter-spacing: 0.03em;
+            border-left: 2px solid transparent;
+            transition: all 0.2s ease;
             background: none;
           }
-          .cv-sidebar a:hover { border-left-color: var(--global-theme-color, #2698BA); color: var(--global-theme-color, #2698BA); background: none; }
-          .cv-sidebar a.active { border-left-color: var(--global-theme-color, #2698BA); color: var(--global-theme-color, #2698BA); font-weight: 600; background: none; }
+          .cv-sidebar a:hover {
+            border-left-color: var(--global-theme-color, #2698BA);
+            color: var(--global-theme-color, #2698BA);
+          }
+          .cv-sidebar a.active {
+            border-left-color: var(--global-theme-color, #2698BA);
+            color: var(--global-theme-color, #2698BA);
+            font-weight: 600;
+            letter-spacing: 0.02em;
+          }
           .cv-content { flex: 1; min-width: 0; }
+          .cv-content .card {
+            border: none;
+            border-radius: 0;
+            box-shadow: none;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 1.5rem;
+          }
+          .cv-content .card:last-child { border-bottom: none; }
+          .cv-content .card-title {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            color: #aaa;
+            font-weight: 600;
+            margin-bottom: 1rem;
+          }
           @media (max-width: 768px) {
-            .cv-layout { flex-direction: column; }
-            .cv-sidebar { position: static; max-width: 100%; display: flex; flex-wrap: wrap; gap: 0.25rem; min-width: auto; }
-            .cv-sidebar ul { display: flex; flex-wrap: wrap; gap: 0.25rem; }
+            .cv-layout { flex-direction: column; gap: 1.5rem; }
+            .cv-sidebar {
+              position: static; max-width: 100%; min-width: auto;
+              border-bottom: 1px solid #eee; padding-bottom: 1rem; margin-bottom: 0.5rem;
+            }
+            .cv-sidebar ul { display: flex; flex-wrap: wrap; gap: 0.1rem 0.5rem; }
             .cv-sidebar li { margin-bottom: 0; }
+            .cv-sidebar a { border-left: none; border-bottom: 2px solid transparent; padding: 0.3rem 0.25rem; }
+            .cv-sidebar a:hover { border-bottom-color: var(--global-theme-color, #2698BA); border-left: none; }
+            .cv-sidebar a.active { border-bottom-color: var(--global-theme-color, #2698BA); border-left: none; }
           }
         </style>
 
