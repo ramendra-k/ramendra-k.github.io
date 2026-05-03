@@ -20,12 +20,11 @@ cv:
         end_date: "Now"
         summary: Windows Update Delivery — Surface ARM Devices
         highlights:
-          - "Ship Windows Updates to ARM-based Surface devices, ensuring update health and build pipeline reliability across multiple SKUs and chipsets."
-          - "Drive device reliability by analyzing large-scale telemetry data to identify failure patterns, diagnose firmware and software issues, and validate fixes before broad rollout."
-          - "Built HealthSenseAI, an AI-powered device health monitoring platform with autonomous remediation capabilities — uses agentic AI to detect, diagnose, and resolve device issues automatically."
-          - "Debugged NPU (Neural Processing Unit) issues on AI-accelerator silicon, root-causing hardware and driver-level failures through telemetry analysis."
-          - "Built an internal AI assistant for engineer onboarding using LLM fine-tuning and retrieval-augmented generation (RAG)."
-          - "Mentor new-hire engineers on team workflows and tooling."
+          - "Ship Windows Updates across ARM-based Surface devices, owning update health and build pipeline reliability for multiple SKUs and chipsets."
+          - "Analyze fleet-scale telemetry to identify failure patterns, diagnose firmware and driver issues, and validate fixes before broad rollout."
+          - "Built HealthSenseAI — an agentic AI platform that autonomously detects, diagnoses, and remediates device health issues."
+          - "Root-caused NPU and AI-accelerator silicon failures through hardware-level debugging and telemetry analysis."
+          - "Built an internal AI onboarding assistant using LLM fine-tuning and RAG."
 
       - company: Samsung R&D
         position: Senior Software Engineer
