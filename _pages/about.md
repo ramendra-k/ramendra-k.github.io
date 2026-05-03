@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: SDE-II at Microsoft
+subtitle:
 nav: false
 nav_order: 0
 
