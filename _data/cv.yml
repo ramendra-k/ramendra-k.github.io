@@ -22,9 +22,9 @@ cv:
         highlights:
           - "Ship Windows Updates across ARM-based Surface devices, owning update health and build pipeline reliability for multiple SKUs and chipsets."
           - "Analyze fleet-scale telemetry to identify failure patterns, diagnose firmware and driver issues, and validate fixes before broad rollout."
-          - "Built HealthSenseAI — an agentic AI platform that autonomously detects, diagnoses, and remediates device health issues."
+          - "Contributed to the design and development of HealthSenseAI — an agentic AI platform that autonomously detects, diagnoses, and remediates device health issues."
           - "Root-caused NPU and AI-accelerator silicon failures through hardware-level debugging and telemetry analysis."
-          - "Built an internal AI onboarding assistant using LLM fine-tuning and RAG."
+          - "Designed and developed an internal AI onboarding assistant using LLM fine-tuning and RAG."
 
       - company: Samsung R&D
         position: Senior Software Engineer
@@ -51,7 +51,7 @@ cv:
         end_date: 2021-01
         highlights:
           - "Optimized display driver algorithms for low-cost chipsets, improving refresh rate and enabling higher-quality display output on budget hardware."
-          - "Worked at the hardware-software co-optimization layer, interfacing with display hardware and HDMI protocols."
+          - "Worked at the hardware-software co-optimization layer, interfacing with graphics and display hardware."
 
     Education:
       - institution: The University of Texas at Austin
