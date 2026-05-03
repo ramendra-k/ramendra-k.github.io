@@ -16,12 +16,12 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "nav-projects",
-          title: "projects",
-          description: "Selected systems and AI infrastructure projects.",
+        },{id: "nav-beyond-work",
+          title: "beyond work",
+          description: "",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/projects/";
+            window.location.href = "/beyond/";
           },
         },{id: "nav-blog",
           title: "blog",
