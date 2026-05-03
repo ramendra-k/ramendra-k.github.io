@@ -202,11 +202,6 @@ layout: default
               {% if cv.label %}
                 <span class="basics-role">{{ cv.label }}</span>
               {% endif %}
-              {% if cv.email %}
-                <a href="mailto:{{ cv.email }}" style="font-size: 0.85rem; color: var(--global-theme-color, #2698BA); text-decoration: none; margin-left: 0.5rem; transition: opacity 0.15s;" onmouseover="this.style.opacity='0.7'" onmouseout="this.style.opacity='1'">
-                  <i class="fa-solid fa-envelope"></i> {{ cv.email }}
-                </a>
-              {% endif %}
             </div>
             {% if cv.summary %}
               <div class="basics-summary">
