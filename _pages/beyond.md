@@ -58,7 +58,7 @@ nav_order: 3
   <li>Harness Engineering</li>
   <li>Reading about distributed ML systems</li>
   <li>Badminton and cricket</li>
-  <li>Exploring new cities and serene greeneries</li>
+  <li>In pursuit of calm</li>
 </ul>
 </div>
 
