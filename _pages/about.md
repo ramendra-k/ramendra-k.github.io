@@ -31,7 +31,7 @@ I'm a software engineer who likes building things that sit at the intersection o
 
 Before this, I worked on the Android Camera Framework and image buffer processing at Samsung R&D, and display drivers at Qualcomm, experiences that taught me to care deeply about performance, correctness, and building things that work under real constraints.
 
-I hold an M.S. in Computer Science from The University of Texas at Austin, where I spent time studying deep learning, reinforcement learning, NLP, and operating systems.
+I hold an M.S. in Computer Science from UT Austin, with a focus on machine learning, systems, and AI.
 
 **Areas of Interest:** Systems & AI Infrastructure, Agentic AI, ML Infrastructure, Distributed Systems, and Reliability Engineering.
 
