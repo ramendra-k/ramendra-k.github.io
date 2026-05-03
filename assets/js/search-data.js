@@ -30,15 +30,15 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/blog/";
           },
-        },{id: "post-coming-soon",
+        },{id: "post-rethinking-the-foundation-a-deep-dive-into-tokenization",
         
-          title: "Coming Soon",
+          title: 'Rethinking the Foundation: A Deep Dive into Tokenization <svg width="1.2rem" height="1.2rem" top=".5rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>',
         
-        description: "Blog posts on AI/ML infrastructure, systems engineering, and lessons from building production systems.",
+        description: "Why BPE dominates over Unigram LM in modern language models — exploring the engineering trade-offs behind tokenization.",
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2026/coming-soon/";
+            window.open("https://ram744.substack.com/p/rethinking-the-foundation-a-deep", "_blank");
           
         },
       },{id: "post-google-gemini-updates-flash-1-5-gemma-2-and-project-astra",
