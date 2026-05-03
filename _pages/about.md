@@ -11,8 +11,7 @@ profile:
   image: 
   image_circular: false
   more_info: >
-    <p>SDE-II at Microsoft</p>
-    <p>M.S. in Computer Science, UT Austin</p>
+    <p></p>
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -26,14 +25,14 @@ latest_posts:
   limit: 0 # leave blank to include all the blog posts
 ---
 
-Hello and welcome to my personal website!
+Hey, glad you're here.
 
-I am an SDE-II at Microsoft, where I ship Windows Updates to Surface devices and build AI-powered automation for device reliability. My work sits at the intersection of systems engineering and machine learning — building infrastructure that monitors, diagnoses, and autonomously remediates issues across Surface devices.
+I'm a software engineer who likes building things that sit at the intersection of systems and AI — the kind of work where reliability matters as much as intelligence. Right now, I'm at Microsoft, shipping Windows Updates to Surface devices and building AI-powered tools that help diagnose and fix device issues autonomously.
 
-My journey started at Qualcomm, working on display drivers and hardware-software co-optimization at the chip level. I then moved to Samsung R&D, where I built high-throughput image processing pipelines for a camera application used by millions. These experiences gave me a deep appreciation for building robust, performant systems under real-world constraints.
+Before this, I worked on camera pipelines at Samsung R&D and display drivers at Qualcomm — experiences that taught me to care deeply about performance, correctness, and building things that work under real constraints.
 
-I hold an M.S. in Computer Science from The University of Texas at Austin, with coursework spanning deep learning, reinforcement learning, NLP, and advanced operating systems.
+I hold an M.S. in Computer Science from The University of Texas at Austin, where I spent time studying deep learning, reinforcement learning, NLP, and operating systems.
 
-**Areas of Interest:** Systems & AI Infrastructure, Agentic AI Systems, ML Infrastructure, Reliability Engineering, Distributed Systems, and Production ML.
+**Areas of Interest:** Systems & AI Infrastructure, Agentic AI, ML Infrastructure, Distributed Systems, and Reliability Engineering.
 
-Here, you'll find my [CV](/cv/), [blog](/blog/), and research work. Thanks for visiting!
+Feel free to explore my [CV](/cv/) and [blog](/blog/), or just say hello.
