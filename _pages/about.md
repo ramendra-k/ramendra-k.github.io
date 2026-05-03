@@ -29,7 +29,7 @@ Hey, glad you're here.
 
 I'm a software engineer working across systems and AI. I've spent my career building things that need to be fast, correct, and reliable, from display drivers and camera frameworks to Windows Update pipelines and AI-powered diagnostic tools.
 
-Currently at Microsoft. M.S. in Computer Science from UT Austin.
+Currently at Microsoft. I hold an M.S. in Computer Science from UT Austin, with a focus on machine learning, systems, and AI.
 
 Interested in distributed ML systems, agentic AI, and the infrastructure that makes intelligence work at scale.
 
