@@ -16,7 +16,7 @@ cv:
       - company: Microsoft
         position: SDE-II
         start_date: 2024-07
-        end_date: "Present"
+        end_date: "Now"
         summary: Windows Update Delivery — Surface ARM Devices
         highlights:
           - "Ship Windows Updates to ARM-based Surface devices, ensuring update health and build pipeline reliability across multiple SKUs and chipsets."
