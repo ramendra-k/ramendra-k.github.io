@@ -68,8 +68,8 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-joined-microsoft-as-sde-ii-in-post-launch-engineering-for-surface-arm-devices",
-          title: 'Joined Microsoft as SDE-II in Post Launch Engineering for Surface ARM devices.',
+            },},{id: "news-joined-microsoft-as-sde-ii-shipping-windows-updates-to-surface-arm-devices",
+          title: 'Joined Microsoft as SDE-II — shipping Windows Updates to Surface ARM devices.',
           description: "",
           section: "News",},{id: "news-started-an-m-s-in-computer-science-at-the-university-of-texas-at-austin",
           title: 'Started an M.S. in Computer Science at The University of Texas at Austin....',
