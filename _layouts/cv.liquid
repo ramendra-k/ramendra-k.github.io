@@ -167,33 +167,74 @@ layout: default
         {% if cv.name or cv.label or cv.social_networks %}
           <div class="card mt-3 p-3">
             <h3 class="card-title font-weight-medium">Basics</h3>
-            <div style="display: flex; flex-wrap: wrap; gap: 1.5rem; align-items: baseline;">
+            <style>
+              .basics-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+                gap: 1.25rem 2rem;
+              }
+              .basics-item .basics-label {
+                font-size: 0.65rem;
+                text-transform: uppercase;
+                letter-spacing: 0.1em;
+                color: #bbb;
+                margin-bottom: 0.25rem;
+              }
+              .basics-item .basics-value {
+                font-size: 0.95rem;
+                font-weight: 500;
+                color: #333;
+              }
+              .basics-item a {
+                color: var(--global-theme-color, #2698BA);
+                text-decoration: none;
+                transition: opacity 0.15s;
+              }
+              .basics-item a:hover { opacity: 0.7; }
+              .basics-profiles a {
+                display: inline-flex;
+                align-items: center;
+                gap: 0.3rem;
+                margin-right: 1rem;
+              }
+              .basics-profiles a::before {
+                content: "";
+                width: 5px;
+                height: 5px;
+                border-radius: 50%;
+                background: var(--global-theme-color, #2698BA);
+                flex-shrink: 0;
+              }
+            </style>
+            <div class="basics-grid">
               {% if cv.name %}
-                <div>
-                  <span style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: #aaa; display: block; margin-bottom: 0.15rem;">Name</span>
-                  <span style="font-size: 1rem; font-weight: 500;">{{ cv.name }}</span>
+                <div class="basics-item">
+                  <div class="basics-label">Name</div>
+                  <div class="basics-value">{{ cv.name }}</div>
                 </div>
               {% endif %}
               {% if cv.label %}
-                <div>
-                  <span style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: #aaa; display: block; margin-bottom: 0.15rem;">Role</span>
-                  <span style="font-size: 1rem; font-weight: 500;">{{ cv.label }}</span>
+                <div class="basics-item">
+                  <div class="basics-label">Role</div>
+                  <div class="basics-value">{{ cv.label }}</div>
                 </div>
               {% endif %}
               {% if cv.social_networks %}
-                <div>
-                  <span style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: #aaa; display: block; margin-bottom: 0.15rem;">Profiles</span>
-                  <span style="font-size: 1rem;">
+                <div class="basics-item">
+                  <div class="basics-label">Profiles</div>
+                  <div class="basics-value basics-profiles">
                     {% for sn in cv.social_networks %}
-                      <a href="{% if sn.network == 'GitHub' %}https://github.com/{{ sn.username }}{% elsif sn.network == 'LinkedIn' %}https://linkedin.com/in/{{ sn.username }}{% else %}#{% endif %}" target="_blank" style="color: var(--global-theme-color, #2698BA); text-decoration: none; margin-right: 0.75rem;">{{ sn.network }}</a>
+                      <a href="{% if sn.network == 'GitHub' %}https://github.com/{{ sn.username }}{% elsif sn.network == 'LinkedIn' %}https://linkedin.com/in/{{ sn.username }}{% else %}#{% endif %}" target="_blank">{{ sn.network }}</a>
                     {% endfor %}
-                  </span>
+                  </div>
                 </div>
               {% endif %}
               {% if cv.website %}
-                <div>
-                  <span style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: #aaa; display: block; margin-bottom: 0.15rem;">Website</span>
-                  <a href="{{ cv.website }}" target="_blank" style="font-size: 1rem; color: var(--global-theme-color, #2698BA); text-decoration: none;">{{ cv.website }}</a>
+                <div class="basics-item">
+                  <div class="basics-label">Website</div>
+                  <div class="basics-value">
+                    <a href="{{ cv.website }}" target="_blank">{{ cv.website }}</a>
+                  </div>
                 </div>
               {% endif %}
             </div>
