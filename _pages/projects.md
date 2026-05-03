@@ -3,7 +3,7 @@ layout: page
 title: projects
 permalink: /projects/
 description: Selected systems and AI infrastructure projects.
-nav: true
+nav: false
 nav_order: 2
 horizontal: false
 ---
