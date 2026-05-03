@@ -60,7 +60,43 @@ layout: default
         {% comment %} RenderCV format {% endcomment %}
         {% assign cv = site.data.cv.cv %}
 
+        <!-- Name Header -->
+        {% if cv.name %}
+          {% assign name_parts = cv.name | split: ' ' %}
+          <div class="text-center mb-4">
+            <h1 style="font-size: 2.5rem; margin-bottom: 0.25rem;">
+              <strong>{{ name_parts[0] }}</strong>{% for part in name_parts offset:1 %} {{ part }}{% endfor %}
+            </h1>
+            {% if cv.label %}
+              <p class="text-muted" style="font-size: 1.1rem; margin-bottom: 0;">{{ cv.label }}</p>
+            {% endif %}
+          </div>
+          <hr style="margin-top: 0.5rem; margin-bottom: 1.5rem;">
+        {% endif %}
+
+        <!-- Section Menu -->
+        <div class="mb-4">
+          {% assign empty_array = '' | split: ',' %}
+          {% assign exp_check = cv.sections.Experience | default: empty_array %}
+          {% assign vol_check = cv.sections.Volunteer | default: empty_array %}
+          {% assign combined_check = exp_check | concat: vol_check %}
+          <ul class="list-unstyled" style="font-size: 1.1rem; line-height: 2.2;">
+            {% if cv.name or cv.label or cv.location or cv.email or cv.phone or cv.website %}
+              <li><a href="#contact-information" style="color: inherit; text-decoration: none; font-weight: 500;">Basics</a></li>
+            {% endif %}
+            {% if combined_check.size > 0 %}
+              <li><a href="#experience" style="color: inherit; text-decoration: none; font-weight: 500;">Work</a></li>
+            {% endif %}
+            {% for section_pair in cv.sections %}
+              {% assign section_title = section_pair[0] %}
+              {% if section_title == 'Experience' or section_title == 'Volunteer' %}{% continue %}{% endif %}
+              <li><a href="#{{ section_title | slugify }}" style="color: inherit; text-decoration: none; font-weight: 500;">{{ section_title }}</a></li>
+            {% endfor %}
+          </ul>
+        </div>
+
         <!-- Header/Contact Information -->
+        <a class="anchor" id="contact-information"></a>
         {% if cv.name or cv.label or cv.location or cv.email or cv.phone or cv.website %}
           <div class="card mt-3 p-3">
             <h3 class="card-title font-weight-medium">Contact Information</h3>
