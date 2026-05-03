@@ -1,6 +1,6 @@
 ---
 layout: page
-title: beyond work
+title: beyond
 permalink: /beyond/
 description:
 nav: true
