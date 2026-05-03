@@ -154,76 +154,72 @@ layout: default
           <div class="card mt-3 p-3">
             <h3 class="card-title font-weight-medium">Basics</h3>
             <style>
-              .basics-grid {
-                display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-                gap: 1.25rem 2rem;
+              .basics-top {
+                display: flex;
+                align-items: baseline;
+                flex-wrap: wrap;
+                gap: 0.4rem 1.5rem;
+                margin-bottom: 0.75rem;
               }
-              .basics-item .basics-label {
-                font-size: 0.65rem;
-                text-transform: uppercase;
-                letter-spacing: 0.1em;
-                color: #bbb;
-                margin-bottom: 0.25rem;
+              .basics-name {
+                font-size: 1.1rem;
+                font-weight: 600;
+                color: #222;
               }
-              .basics-item .basics-value {
-                font-size: 0.95rem;
-                font-weight: 500;
-                color: #333;
+              .basics-role {
+                font-size: 0.9rem;
+                color: #888;
               }
-              .basics-item a {
+              .basics-links {
+                display: flex;
+                gap: 0.75rem;
+                flex-wrap: wrap;
+              }
+              .basics-links a {
+                font-size: 0.85rem;
                 color: var(--global-theme-color, #2698BA);
                 text-decoration: none;
                 transition: opacity 0.15s;
               }
-              .basics-item a:hover { opacity: 0.7; }
-              .basics-profiles a {
-                display: inline-flex;
-                align-items: center;
-                gap: 0.3rem;
-                margin-right: 1rem;
+              .basics-links a:hover { opacity: 0.7; }
+              .basics-links span {
+                color: #ddd;
+                font-size: 0.85rem;
               }
-              .basics-profiles a::before {
-                content: "";
-                width: 5px;
-                height: 5px;
-                border-radius: 50%;
-                background: var(--global-theme-color, #2698BA);
-                flex-shrink: 0;
+              .basics-summary {
+                font-size: 0.9rem;
+                color: #555;
+                line-height: 1.7;
+                margin-top: 0.75rem;
+                padding-top: 0.75rem;
+                border-top: 1px solid #f0f0f0;
               }
             </style>
-            <div class="basics-grid">
+            <div class="basics-top">
               {% if cv.name %}
-                <div class="basics-item">
-                  <div class="basics-label">Name</div>
-                  <div class="basics-value">{{ cv.name }}</div>
-                </div>
+                <span class="basics-name">{{ cv.name }}</span>
               {% endif %}
               {% if cv.label %}
-                <div class="basics-item">
-                  <div class="basics-label">Role</div>
-                  <div class="basics-value">{{ cv.label }}</div>
-                </div>
-              {% endif %}
-              {% if cv.social_networks %}
-                <div class="basics-item">
-                  <div class="basics-label">Profiles</div>
-                  <div class="basics-value basics-profiles">
-                    {% for sn in cv.social_networks %}
-                      <a href="{% if sn.network == 'GitHub' %}https://github.com/{{ sn.username }}{% elsif sn.network == 'LinkedIn' %}https://linkedin.com/in/{{ sn.username }}{% else %}#{% endif %}" target="_blank">{{ sn.network }}</a>
-                    {% endfor %}
-                  </div>
-                </div>
-              {% endif %}
-              {% if cv.website %}
-                <div class="basics-item">
-                  <div class="basics-label">Website</div>
-                  <div class="basics-value">
-                    <a href="{{ cv.website }}" target="_blank">{{ cv.website }}</a>
-                  </div>
-                </div>
+                <span class="basics-role">{{ cv.label }}</span>
               {% endif %}
             </div>
+            {% if cv.social_networks or cv.website %}
+              <div class="basics-links">
+                {% for sn in cv.social_networks %}
+                  <a href="{% if sn.network == 'GitHub' %}https://github.com/{{ sn.username }}{% elsif sn.network == 'LinkedIn' %}https://linkedin.com/in/{{ sn.username }}{% else %}#{% endif %}" target="_blank">{{ sn.network }}</a>
+                  {% unless forloop.last %}<span>·</span>{% endunless %}
+                {% endfor %}
+                {% if cv.website %}
+                  <span>·</span>
+                  <a href="{{ cv.website }}" target="_blank">{{ cv.website }}</a>
+                {% endif %}
+              </div>
+            {% endif %}
+            {% if cv.summary %}
+              <div class="basics-summary">
+                {{ cv.summary }}
+              </div>
+            {% endif %}
           </div>
         {% endif %}
 
