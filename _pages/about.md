@@ -27,10 +27,12 @@ latest_posts:
 
 Hey, glad you're here.
 
-I'm a software engineer working across systems and AI. I've spent my career building things that need to be fast, correct, and reliable, from display drivers and camera frameworks to Windows Update pipelines and AI-powered diagnostic tools.
+I'm a software engineer who likes building things that sit at the intersection of systems and AI, the kind of work where reliability matters as much as intelligence. Right now, I'm at Microsoft, shipping Windows Updates to Surface devices and building AI-powered tools that help diagnose and fix device issues autonomously.
 
-Currently at Microsoft. I hold an M.S. in Computer Science from UT Austin, with a focus on machine learning, systems, and AI.
+Before this, I worked on camera pipelines at Samsung R&D and display drivers at Qualcomm, experiences that taught me to care deeply about performance, correctness, and building things that work under real constraints.
 
-Interested in distributed ML systems, agentic AI, and the infrastructure that makes intelligence work at scale.
+I hold an M.S. in Computer Science from UT Austin, with a focus on machine learning, systems, and AI.
+
+**Areas of Interest:** Distributed ML systems, agentic AI, and the infrastructure that makes intelligence work at scale.
 
 Feel free to look around or just say hello.
