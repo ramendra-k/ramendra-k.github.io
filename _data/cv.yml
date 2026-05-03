@@ -57,16 +57,16 @@ cv:
       - institution: The University of Texas at Austin
         location: Austin, TX
         area: Computer Science
-        studyType: M.S.
+        studyType: Master of Science
         start_date: 2024-08
         end_date: 2026-05
         score: "3.9/4.0"
-        courses: "Deep Learning, Machine Learning, Reinforcement Learning, NLP, Advanced Deep Learning, Advanced Operating Systems, Planning Search & Reasoning Under Uncertainty, Optimization, Online Learning"
+        courses: "Deep Learning, Machine Learning, Reinforcement Learning, NLP, Advanced Deep Learning, Advanced Operating Systems, Planning Search & Reasoning Under Uncertainty, Optimization, Online Learning, Algorithms"
 
       - institution: Jadavpur University
         location: Kolkata, India
         area: Electronics & Instrumentation Engineering
-        studyType: B.E.
+        studyType: Bachelor of Engineering
         start_date: 2015-08
         end_date: 2019-05
         score: "7.6/10.0"
