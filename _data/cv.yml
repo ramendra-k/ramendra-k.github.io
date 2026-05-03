@@ -18,7 +18,7 @@ cv:
         position: SDE-II
         start_date: 2024-07
         end_date: "Now"
-        summary: Windows Update Delivery — Surface ARM Devices
+        summary: Windows Updates for Surface Devices
         highlights:
           - "Ship Windows Updates across ARM-based Surface devices, owning update health and build pipeline reliability for multiple SKUs and chipsets."
           - "Analyze fleet-scale telemetry to identify failure patterns, diagnose firmware and driver issues, and validate fixes before broad rollout."
