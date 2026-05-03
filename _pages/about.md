@@ -11,7 +11,6 @@ profile:
   image: 
   image_circular: false
   more_info: >
-    <p>Hyderabad, India</p>
     <p>SDE-II at Microsoft</p>
     <p>M.S. in Computer Science, UT Austin</p>
 

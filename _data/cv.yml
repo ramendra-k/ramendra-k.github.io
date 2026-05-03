@@ -15,7 +15,6 @@ cv:
     Experience:
       - company: Microsoft
         position: SDE-II
-        location: Hyderabad, India
         start_date: 2024-07
         end_date: "Present"
         summary: Windows Update Delivery — Surface ARM Devices
@@ -29,7 +28,6 @@ cv:
 
       - company: Samsung R&D
         position: Senior Software Engineer
-        location: Bangalore, India
         start_date: 2022-01
         end_date: 2024-06
         summary: ExpertRaw Camera App — Image Processing Framework
@@ -42,7 +40,6 @@ cv:
 
       - company: BigGrocers
         position: Software Engineer
-        location: Bangalore, India
         start_date: 2021-07
         end_date: 2021-12
         highlights:
@@ -50,7 +47,6 @@ cv:
 
       - company: Qualcomm
         position: Associate Software Engineer
-        location: Hyderabad, India
         start_date: 2019-09
         end_date: 2021-01
         highlights:
