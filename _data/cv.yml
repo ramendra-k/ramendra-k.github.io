@@ -148,7 +148,6 @@ cv:
           - Kafka
           - CI/CD
           - GPU/NPU Debugging
-          - Windows Internals
           - MLOps
           - Azure DevOps
           - WinDbg
