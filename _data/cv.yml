@@ -121,8 +121,22 @@ cv:
         icon: fa-solid fa-code
         keywords: "Python, C/C++, Java"
 
+    Languages:
+      - language: English
+        fluency: Fluent
+      - language: Hindi
+        fluency: Native
+
     Projects:
       - name: HealthSenseAI Self-Heal Engine
+
+    Languages:
+      - language: English
+        fluency: Fluent
+      - language: Hindi
+        fluency: Native
+
+    Projects_hidden:
         summary: "An AI-powered autonomous remediation system for device health. Uses agentic AI with causal root-cause analysis, domain-specific repair skills, bounded remediation, and safety guardrails. Monitors devices through real-time telemetry ingestion and health checkers across multiple subsystems."
         highlights:
           - "Python, Azure OpenAI, asyncio"
