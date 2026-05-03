@@ -2,7 +2,6 @@ name: Prettier code formatter
 
 on:
   workflow_dispatch:
-      - main
 
 jobs:
   check:

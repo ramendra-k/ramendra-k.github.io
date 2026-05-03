@@ -1,9 +1,6 @@
 name: Render a CV
 on:
   workflow_dispatch:
-      - "assets/rendercv/settings.yaml"
-  workflow_call:
-  workflow_dispatch:
 permissions:
   contents: write
 jobs:
