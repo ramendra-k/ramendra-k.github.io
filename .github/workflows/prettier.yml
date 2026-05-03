@@ -1,13 +1,7 @@
 name: Prettier code formatter
 
 on:
-  pull_request:
-    branches:
-      - master
-      - main
-  push:
-    branches:
-      - master
+  workflow_dispatch:
       - main
 
 jobs:
