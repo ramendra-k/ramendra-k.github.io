@@ -123,9 +123,7 @@ cv:
           - Deep Learning
           - Reinforcement Learning
           - Online Learning
-          - Computer Vision
           - Natural Language Processing
-          - Planning and Search Under Uncertainty
           - AI Safety and Orchestration
           - LLM Fine-tuning
           - Agentic AI Systems
@@ -141,35 +139,27 @@ cv:
           - Optimization
           - Convex Optimization
 
-      - name: ML Infrastructure
-        keywords:
-          - Ray
-          - Spark
-          - Kubeflow
-          - MLOps
-          - Model Serving
-          - Data Pipelines
-
       - name: Systems & Infrastructure
         keywords:
           - Linux
           - Kubernetes
           - Docker
-          - GPU/NPU Debugging
+          - Ray
+          - Spark
+          - Kubeflow
           - Kafka
           - CI/CD
+          - GPU/NPU Debugging
           - Windows Internals
+          - MLOps
+          - Azure DevOps
+          - WinDbg
 
       - name: Data & Analytics
         keywords:
           - Telemetry Analysis
           - Statistical Analysis
           - A/B Testing
-
-      - name: Tools & Platforms
-        keywords:
-          - Azure DevOps
-          - WinDbg
 
     Languages:
       - language: English
