@@ -106,26 +106,16 @@ cv:
         summary: "Proposed a Semantic Neural Hawkes Process (S-NHP) framework that models integrity detection as a self-exciting process over sparse textual signals. Combines temporally contrastive sentence embeddings, interpretable multi-head semantic excitation kernels, and Extreme Value Theory (EVT) based tail modeling. Captures Semantic Temporal Resonance — causally related safety narratives that amplify risk intensity over time. Demonstrated substantial reduction in false positives compared to memoryless baselines while detecting integrity events earlier."
 
     Skills:
-      - name: Systems & Infrastructure
-        keywords:
-          - Linux
-          - Kubernetes
-          - Docker
-          - Distributed Systems
-          - GPU/NPU Debugging
-          - Kafka
-          - Redis
-          - CI/CD
-          - Windows Internals
-          - UEFI/Firmware
-
-      - name: Programming Languages
+      - name: Computer Science
         keywords:
           - Python
           - C/C++
           - Java
-          - Bash
-          - HTML/CSS/JS
+          - Data Structures & Algorithms
+          - Operating Systems
+          - Distributed Systems
+          - Git
+          - SQL
 
       - name: AI & Machine Learning
         keywords:
@@ -133,13 +123,24 @@ cv:
           - Transformers
           - Deep Learning
           - Reinforcement Learning
+          - Online Learning
           - Computer Vision
           - Natural Language Processing
+          - Planning and Search Under Uncertainty
+          - AI Safety and Orchestration
           - LLM Fine-tuning
           - Agentic AI Systems
           - RAG Pipelines
           - vLLM
           - ONNX
+
+      - name: Mathematics
+        keywords:
+          - Linear Algebra
+          - Calculus
+          - Probability & Statistics
+          - Optimization
+          - Convex Optimization
 
       - name: ML Infrastructure
         keywords:
@@ -150,25 +151,26 @@ cv:
           - Model Serving
           - Data Pipelines
 
+      - name: Systems & Infrastructure
+        keywords:
+          - Linux
+          - Kubernetes
+          - Docker
+          - GPU/NPU Debugging
+          - Kafka
+          - CI/CD
+          - Windows Internals
+          - UEFI/Firmware
+
       - name: Data & Analytics
         keywords:
-          - SQL
           - Telemetry Analysis
           - Data Visualization
           - Statistical Analysis
           - A/B Testing
 
-      - name: Mathematics
-        keywords:
-          - Linear Algebra
-          - Calculus
-          - Probability & Statistics
-          - Optimization
-          - Convex Optimization
-
       - name: Tools & Platforms
         keywords:
-          - Git
           - Azure
           - Azure DevOps
           - WinDbg
