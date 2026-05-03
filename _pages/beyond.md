@@ -53,39 +53,23 @@ nav_order: 3
 <div class="beyond-grid">
 
 <div class="beyond-section">
-<h3>Currently Reading</h3>
-<ul>
-  <li>Designing Data-Intensive Applications — Martin Kleppmann</li>
-  <li>The Art of Doing Science and Engineering — Richard Hamming</li>
-</ul>
-</div>
-
-<div class="beyond-section">
 <h3>Interests</h3>
 <ul>
-  <li>Building side projects with LLMs</li>
-  <li>Reading about distributed systems</li>
-  <li>Following F1 and cricket</li>
-  <li>Exploring new cities and street food</li>
+  <li>Harness Engineering</li>
+  <li>Reading about distributed ML systems</li>
+  <li>Badminton and cricket</li>
+  <li>Exploring new cities and serene greeneries</li>
 </ul>
 </div>
 
 <div class="beyond-section">
-<h3>Music</h3>
-<ul>
-  <li>Indie & Alternative Rock</li>
-  <li>Lo-fi beats while coding</li>
-  <li>Bollywood classics</li>
-</ul>
+<h3>Currently Reading</h3>
+<p style="color: #aaa; font-style: italic;">Coming soon.</p>
 </div>
 
 <div class="beyond-section">
 <h3>Travel</h3>
-<ul>
-  <li>Austin, TX — grad school home</li>
-  <li>Kolkata — where it all started</li>
-  <li>Bangalore — Samsung R&D days</li>
-</ul>
+<p style="color: #aaa; font-style: italic;">Coming soon.</p>
 </div>
 
 </div>
