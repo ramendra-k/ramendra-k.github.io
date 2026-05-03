@@ -1,32 +1,42 @@
 {% comment %}
-  Unified skills entry renderer for both formats
+  Rich categorized skills renderer
 {% endcomment %}
 
-<div class="card-text font-weight-light">
+<style>
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1.5rem;
+  }
+  .skill-category h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.35rem;
+    border-bottom: 2px solid var(--global-theme-color, #2698BA);
+  }
+  .skill-category ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .skill-category li {
+    padding: 0.2rem 0;
+    font-size: 0.95rem;
+  }
+</style>
+
+<div class="skills-grid">
   {% for entry in entries %}
-    <div class="skill-item">
-      {% if entry.icon %}
-        <i class="{{ entry.icon }}"></i>
-      {% endif %}
-      <strong>
-        {{- entry.name -}}
-        {%- if entry.level %} ({{ entry.level }}){% endif %}:</strong
-      >
+    <div class="skill-category">
+      <h4>{{ entry.name }}</h4>
       {% if entry.keywords %}
-        {% for keyword in entry.keywords %}
-          {% if forloop.last %}
-            {{ keyword }}
-          {% else %}
-            {{ keyword }},
-          {% endif %}
-        {% endfor %}
+        <ul>
+          {% for keyword in entry.keywords %}
+            <li>{{ keyword }}</li>
+          {% endfor %}
+        </ul>
       {% endif %}
     </div>
   {% endfor %}
 </div>
-
-<style>
-  .skill-item {
-    padding: 0.5rem 0;
-  }
-</style>
