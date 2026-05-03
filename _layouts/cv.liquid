@@ -60,20 +60,6 @@ layout: default
         {% comment %} RenderCV format {% endcomment %}
         {% assign cv = site.data.cv.cv %}
 
-        <!-- Name Header -->
-        {% if cv.name %}
-          {% assign name_parts = cv.name | split: ' ' %}
-          <div class="text-center" style="margin-bottom: 2rem;">
-            <h1 style="font-size: 2.8rem; margin-bottom: 0.3rem; letter-spacing: 0.04em; font-weight: 300;">
-              <span style="font-weight: 700;">{{ name_parts[0] }}</span>{% for part in name_parts offset:1 %} {{ part }}{% endfor %}
-            </h1>
-            {% if cv.label %}
-              <p style="font-size: 0.95rem; margin-bottom: 0; color: #888; letter-spacing: 0.08em; text-transform: uppercase;">{{ cv.label }}</p>
-            {% endif %}
-          </div>
-          <hr style="margin: 0 auto 2rem; border: none; border-top: 1px solid #e0e0e0; width: 60%;">
-        {% endif %}
-
         <!-- CV Premium Style -->
         <style>
           .cv-layout { display: flex; gap: 3rem; }
