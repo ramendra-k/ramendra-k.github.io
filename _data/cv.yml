@@ -30,7 +30,7 @@ cv:
         position: Senior Software Engineer
         start_date: 2022-01
         end_date: 2024-06
-        summary: ExpertRaw Camera App — Image Processing Framework
+        summary: Android Camera Framework — Image Processing
         highlights:
           - "Worked on the image processing pipeline for ExpertRaw, Samsung's flagship camera application, at the Android framework layer."
           - "Designed a cloud-based compute offloading service for image rendering, enabling high-quality imaging on devices with limited processing power."
