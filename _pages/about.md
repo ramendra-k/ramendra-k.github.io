@@ -36,4 +36,4 @@ I hold an M.S. in Computer Science from The University of Texas at Austin, with 
 
 **Areas of Interest:** Systems & AI Infrastructure, Agentic AI Systems, ML Infrastructure, Reliability Engineering, Distributed Systems, and Production ML.
 
-Here, you'll find my [CV](/cv/), [projects](/projects/), [blog](/blog/), and research work. Thanks for visiting!
+Here, you'll find my [CV](/cv/), [blog](/blog/), and research work. Thanks for visiting!
