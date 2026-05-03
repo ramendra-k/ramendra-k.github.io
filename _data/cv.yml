@@ -1,6 +1,7 @@
 cv:
   name: Ramendra Kumar
   label: SDE-II at Microsoft
+  email: kumarramendra154@gmail.com
   location: Hyderabad, India
   image: ""
   summary: "6+ years building systems at the intersection of infrastructure and AI. Ship Windows Updates to Surface devices at Microsoft. Previously built camera pipelines at Samsung and display drivers at Qualcomm. M.S. in CS from UT Austin (3.9/4.0)."
@@ -9,7 +10,7 @@ cv:
     - network: GitHub
       username: ramendra-k
     - network: LinkedIn
-      username: ramendrakumar
+      username: ramendra-k
 
   sections:
     Experience:

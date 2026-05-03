@@ -202,19 +202,12 @@ layout: default
               {% if cv.label %}
                 <span class="basics-role">{{ cv.label }}</span>
               {% endif %}
+              {% if cv.email %}
+                <a href="mailto:{{ cv.email }}" style="font-size: 0.85rem; color: var(--global-theme-color, #2698BA); text-decoration: none; margin-left: 0.5rem; transition: opacity 0.15s;" onmouseover="this.style.opacity='0.7'" onmouseout="this.style.opacity='1'">
+                  <i class="fa-solid fa-envelope"></i> {{ cv.email }}
+                </a>
+              {% endif %}
             </div>
-            {% if cv.social_networks or cv.website %}
-              <div class="basics-links">
-                {% for sn in cv.social_networks %}
-                  <a href="{% if sn.network == 'GitHub' %}https://github.com/{{ sn.username }}{% elsif sn.network == 'LinkedIn' %}https://linkedin.com/in/{{ sn.username }}{% else %}#{% endif %}" target="_blank">{{ sn.network }}</a>
-                  {% unless forloop.last %}<span>·</span>{% endunless %}
-                {% endfor %}
-                {% if cv.website %}
-                  <span>·</span>
-                  <a href="{{ cv.website }}" target="_blank">{{ cv.website }}</a>
-                {% endif %}
-              </div>
-            {% endif %}
             {% if cv.summary %}
               <div class="basics-summary">
                 {{ cv.summary }}
