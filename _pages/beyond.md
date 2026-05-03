@@ -64,7 +64,9 @@ nav_order: 3
 
 <div class="beyond-section">
 <h3>Currently Reading</h3>
-<p style="color: #aaa; font-style: italic;">Coming soon.</p>
+<ul>
+  <li>Origin Story: A Big History of Everything — David Christian</li>
+</ul>
 </div>
 
 <div class="beyond-section">
