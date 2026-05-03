@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Joined Microsoft as **SDE-II** in Post Launch Engineering for Surface ARM devices.
+Joined Microsoft as **SDE-II** — shipping Windows Updates to Surface ARM devices.

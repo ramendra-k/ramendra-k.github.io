@@ -31,7 +31,7 @@ latest_posts:
 
 Hello and welcome to my personal website!
 
-I am an SDE-II at Microsoft, where I focus on fleet-scale reliability and AI-powered automation for Windows devices. My work sits at the intersection of systems engineering and machine learning — building infrastructure that monitors, diagnoses, and autonomously remediates issues across large device fleets.
+I am an SDE-II at Microsoft, where I ship Windows Updates to Surface devices and build AI-powered automation for device reliability. My work sits at the intersection of systems engineering and machine learning — building infrastructure that monitors, diagnoses, and autonomously remediates issues across Surface devices.
 
 My journey started at Qualcomm, working on display drivers and hardware-software co-optimization at the chip level. I then moved to Samsung R&D, where I built high-throughput image processing pipelines for a camera application used by millions. These experiences gave me a deep appreciation for building robust, performant systems under real-world constraints.
 

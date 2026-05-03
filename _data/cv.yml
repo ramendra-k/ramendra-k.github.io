@@ -18,9 +18,9 @@ cv:
         location: Hyderabad, India
         start_date: 2024-07
         end_date: "Present"
-        summary: Post Launch Engineering — Surface ARM Devices
+        summary: Windows Update Delivery — Surface ARM Devices
         highlights:
-          - "Work on Windows Update delivery pipelines for ARM-based Surface devices, ensuring update health and build pipeline reliability across multiple SKUs and chipsets."
+          - "Ship Windows Updates to ARM-based Surface devices, ensuring update health and build pipeline reliability across multiple SKUs and chipsets."
           - "Drive device reliability by analyzing large-scale telemetry data to identify failure patterns, diagnose firmware and software issues, and validate fixes before broad rollout."
           - "Built HealthSenseAI, an AI-powered device health monitoring platform with autonomous remediation capabilities — uses agentic AI to detect, diagnose, and resolve device issues automatically."
           - "Debugged NPU (Neural Processing Unit) issues on AI-accelerator silicon, root-causing hardware and driver-level failures through telemetry analysis."
