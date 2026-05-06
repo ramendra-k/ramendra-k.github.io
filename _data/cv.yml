@@ -118,16 +118,13 @@ cv:
         keywords:
           - PyTorch
           - Transformers
-          - Deep Learning
-          - Reinforcement Learning
-          - Online Learning
-          - Natural Language Processing
-          - AI Safety and Orchestration
           - LLM Fine-tuning
           - Agentic AI Systems
           - RAG Pipelines
           - vLLM
           - ONNX
+          - Reinforcement Learning
+          - Natural Language Processing
 
       - name: Mathematics
         keywords:
@@ -143,7 +140,6 @@ cv:
           - Docker
           - Ray
           - Spark
-          - Kubeflow
           - Kafka
           - CI/CD
           - GPU/NPU Debugging
