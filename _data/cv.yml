@@ -118,12 +118,15 @@ cv:
         keywords:
           - PyTorch
           - Transformers
+          - Deep Learning
           - LLM Fine-tuning
           - Agentic AI Systems
+          - AI Safety and Orchestration
           - RAG Pipelines
           - vLLM
           - ONNX
           - Reinforcement Learning
+          - Online Learning
           - Natural Language Processing
 
       - name: Mathematics
