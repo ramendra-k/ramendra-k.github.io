@@ -21,10 +21,10 @@ cv:
         summary: Windows Updates for Surface Devices
         highlights:
           - "Own update health and release readiness across 9 ARM-based Surface SKUs, shipping monthly Windows Update releases to millions of devices through saturation-based rollout gating."
-          - "Built fleet-scale failure detection and root-cause analysis workflows over Surface telemetry, catching firmware, driver, and silicon regressions pre-rollout and accelerating time-to-mitigation across release trains."
-          - "Drive driver and firmware fix validation across the Surface device farm pre-broad-rollout, preventing update-induced regressions and brick-class failures from reaching customer devices."
-          - "Designed core components of **HealthSenseAI**, an agentic AI platform that autonomously detects, diagnoses, and remediates device health issues — recognized with Microsoft's Engineering Excellence Award for taking it from POC to production."
+          - "Root-cause **NPU and AI-accelerator silicon failures** on Copilot+ Surface devices through hardware-level debugging and telemetry forensics, partnering with silicon and firmware teams to unblock on-device AI inference workloads."
+          - "Designed core components of **HealthSenseAI**, a production agentic AI platform built on Azure OpenAI with causal RCA, bounded remediation, and safety guardrails — recognized with Microsoft's Engineering Excellence Award for taking it from POC to production."
           - "Designed and shipped **PLE Echo**, an internal RAG + fine-tuned LLM assistant adopted across the team for engineer onboarding and operational Q&A."
+          - "Built fleet-scale observability and device-farm validation workflows over Surface telemetry, catching driver, firmware, and silicon regressions pre-rollout and preventing brick-class failures from reaching customer devices."
 
       - company: Samsung R&D
         position: Senior Software Engineer
