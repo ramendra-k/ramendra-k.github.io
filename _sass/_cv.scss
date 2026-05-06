@@ -2,6 +2,29 @@
  * CV shared styles
  *****************************/
 
+.badge.danger-color-dark,
+span.badge.danger-color-dark {
+  background-color: #7f1d1d !important;
+  color: #ffffff !important;
+}
+
+html[data-theme="dark"] .badge.danger-color-dark,
+html[data-theme="dark"] span.badge.danger-color-dark {
+  background-color: #dc6c6c !important;
+  color: #1c1c1d !important;
+}
+
+a.related-post-link {
+  color: var(--global-theme-color);
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+a.related-post-link:hover {
+  color: var(--global-hover-color);
+  text-decoration: underline;
+}
+
 div.container-link-button {
   margin-right: 0.5rem;
 }
