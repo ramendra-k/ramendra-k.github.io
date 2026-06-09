@@ -62,7 +62,7 @@ cv:
         end_date: 2026-05
         courses: "Deep Learning, Machine Learning, Reinforcement Learning, NLP, Advanced Deep Learning, Advanced Operating Systems, Planning Search & Reasoning Under Uncertainty, Optimization, Online Learning, Algorithms"
         highlights:
-          - "GPA: 3.9 / 4.0"
+          - "*GPA: 3.9 / 4.0*"
 
       - institution: Jadavpur University
         location: Kolkata, India
@@ -71,7 +71,7 @@ cv:
         start_date: 2015-08
         end_date: 2019-05
         highlights:
-          - "GPA: 7.6 / 10.0"
+          - "*GPA: 7.6 / 10.0*"
 
     Awards:
       - title: Engineering Excellence Award
