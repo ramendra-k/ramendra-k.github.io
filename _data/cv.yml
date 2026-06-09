@@ -4,7 +4,7 @@ cv:
   email: kumarramendra154@gmail.com
   location: Hyderabad, India
   image: ""
-  summary: "I'm a software engineer building AI infrastructure across the systems stack. At Microsoft, I work on Windows Update delivery, GPU driver and runtime reliability for Surface devices, and production agentic AI for fleet diagnostics. I'm particularly interested in distributed ML, LLM inference, and the systems that make AI reliable at scale."
+  summary: "AI Systems Engineer with deep systems-software roots, building reliable AI from the silicon up. Currently at Microsoft on Windows Update delivery, GPU driver and runtime reliability for Surface devices, and a production agentic AI platform for fleet diagnostics. Focus: distributed ML, LLM inference, and the systems that make AI reliable at scale."
 
   social_networks:
     - network: GitHub
