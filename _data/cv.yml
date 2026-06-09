@@ -23,7 +23,7 @@ cv:
           - "Own update health and release readiness across 9 ARM-based Surface SKUs, shipping monthly Windows Update releases to millions of devices through saturation-based rollout gating."
           - "Root-cause NPU and AI-accelerator silicon failures on Copilot+ Surface devices through hardware-level debugging and telemetry forensics, partnering with silicon and firmware teams to unblock on-device AI inference workloads."
           - "Designed core components of HealthSenseAI, a production agentic AI platform built on Azure OpenAI with causal RCA, bounded remediation, and safety guardrails, recognized with Microsoft's Engineering Excellence Award for taking it from POC to production."
-          - "Designed and shipped PLE Echo, an internal RAG + fine-tuned LLM assistant adopted across the team for engineer onboarding and operational Q&A."
+          - "Architected and shipped PLE Echo, a RAG + SFT/LoRA fine-tuned Mistral-7B (500K examples from team wiki, design docs, and SoC specs), deployed on Azure GPU VMs for engineer onboarding and saving 2-3 hours per developer per week on ramp-up."
           - "Built fleet-scale observability and device-farm validation workflows over Surface telemetry, catching driver, firmware, and silicon regressions pre-rollout and preventing brick-class failures from reaching customer devices."
 
       - company: Samsung R&D
@@ -175,9 +175,9 @@ cv:
         end_date: ""
 
       - name: PLE Echo, AI Onboarding Agent
-        summary: "An internal AI assistant built for engineer onboarding. Fine-tuned a large language model on team documentation and built a retrieval-augmented generation (RAG) pipeline for contextual answers. Deployed as a web application."
+        summary: "An internal AI assistant for engineer onboarding. SFT/LoRA fine-tuned Mistral-7B on 500K examples drawn from team wiki, design docs, and SoC specs; paired with a retrieval-augmented generation (RAG) pipeline for contextual answers and served on Azure GPU VMs via vLLM."
         highlights:
-          - "Python, PyTorch, Flask"
+          - "Mistral-7B, SFT, LoRA (PEFT), RAG, vLLM, Azure, Python, PyTorch"
         start_date: 2024
         end_date: ""
 
